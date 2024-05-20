@@ -10,7 +10,7 @@ describe('funcionalidad de Añadir al carrito', () => {
     cy.focused().type('{enter}')
     //Añadir al carrito el primer producto
     cy.contains('Agregar').first().click()
-    cy.wait(5000)
+    
     //Validar el mensaje
     cy.get('.toast-component_fs-toast__u3MiM').should('be.visible')
     
